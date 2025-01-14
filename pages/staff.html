@@ -7,7 +7,51 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Sobre Nosaltres Staff</title>
 </head>
-
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+    
+    .flip-card-back {
+      background-color: #2980b9;
+      color: white;
+      transform: rotateY(180deg);
+    }
+    </style>
 <body>
     <!--MIRAR QUE EL MENU SEA RESPONSIVE-->
     <div class="w3-bar w3-border w3-green ">
@@ -20,39 +64,58 @@
     </div>
 
     <div class="w3-container w3-padding-32">
-    <div class="w3-row-padding w3-margin-top">
-        <div class="w3-third">
-            <div class="w3-card">
-                <img src="../img/img2.jpeg" style="width:100%">
-                <div class="w3-container">
-                    <h5>5 Terre</h5>
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <header class="w3-container w3-light-grey">
+                        <h3>JHOAN ROQDRIGUES</h3>
+                    </header>
+                    <div class="w3-container">
+                        <p>1 new friend request</p>
+                        <hr>
+                        <img src="img_avatar3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                        <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+                    </div>
+                    <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
                 </div>
             </div>
-        </div>
-
-        <div class="w3-third">
-            <div class="w3-card">
-                <img src="../img/img2.jpeg" style="width:100%">
-                <div class="w3-container">
-                    <h5>Monterosso</h5>
+    
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <header class="w3-container w3-light-grey">
+                        <h3>MArio sentis</h3>
+                    </header>
+                    <div class="w3-container">
+                        <p>1 new friend request</p>
+                        <hr>
+                        <img src="img_avatar3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                        <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+                    </div>
+                    <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
                 </div>
             </div>
-        </div>
-
-        <div class="w3-third">
-            <div class="w3-card">
-                <img src="../img/img2.jpeg" style="width:100%">
-                <div class="w3-container">
-                    <h5>Vernazza</h5>
+    
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <header class="w3-container w3-light-grey">
+                        <h3>Juan Perez</h3>
+                    </header>
+                    <div class="w3-container">
+                        <p>1 new friend request</p>
+                        <hr>
+                        <img src="img_avatar3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                        <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+                    </div>
+                    <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+    
 
-    <div class="w3-cell-row w3-padding-16" style="height: 20rem;">
-        <div class="w3-container w3-red w3-cell">
-            <img src="../img/img2.jpeg" alt="" >
+    <div class="w3-cell-row w3-padding-16" style="height: 20rem; padding-left: 1rem; padding-right: 1rem;">
+        <div class="w3-container w3-red w3-cell" style="padding: 0; width: 60%; height: 10px;">
+            <img src="../img/img2.jpeg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="w3-container w3-green w3-cell">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam temporibus placeat doloribus
@@ -64,28 +127,28 @@
             </p>
         </div>
     </div>
-</div>
+    
+    
 
 
-
-<footer>
-    <div class="w3-container" style="margin-top: 2rem;">
-        <div class="w3-cell-row">
-            <div class="w3-container w3-red w3-cell">
-                <h3>Xarxes socials</h3>
-            </div>
-            <div class="w3-container w3-green w3-cell">
-                <p>Inici</p>
-                <p>Contacte</p>
-                <p>Sobre Nosaltres</p>
-                <p>Programes</p>
-                <p>Noticies</p>
-                <p>Galeria</p>
-                <p>Classificacio</p>
+    <footer>
+        <div class="w3-container" style="margin-top: 2rem;">
+            <div class="w3-cell-row">
+                <div class="w3-container w3-red w3-cell">
+                    <h3>Xarxes socials</h3>
+                </div>
+                <div class="w3-container w3-green w3-cell">
+                    <p>Inici</p>
+                    <p>Contacte</p>
+                    <p>Sobre Nosaltres</p>
+                    <p>Programes</p>
+                    <p>Noticies</p>
+                    <p>Galeria</p>
+                    <p>Classificacio</p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 
 </html>
