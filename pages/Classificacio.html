@@ -51,6 +51,34 @@
     a:active{
       color: red;
     }
+
+    table {
+            width: 90%;
+            margin: 2rem auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #000;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #ffe6e6;
+        }
+
 </style>
 
 <body>
@@ -66,93 +94,102 @@
 
     <div class="w3-container" style="  display:flex; justify-content: center; margin-top: 2rem; font-weight: bold;">
         <div class="w3-card-4" style="width: 40%; margin-right: 1rem;">
-
-            <header class="w3-container w3-black">
-                <h1>Resultat</h1>
-            </header>
-
-            <div class="w3-container">
-                <div style="  display:flex; justify-content: center;">
-                    <p style="text-align: center; margin-right: 12rem;">NOM_V</p>
-                    <p style="text-align: center;">NOM_L</p>
+            <div class="w3-container w3-black w3-center w3-padding-32" style="max-width: 600px; margin: auto; border-radius: 8px;">
+                <h1 class="w3-xlarge w3-margin-bottom">Resultat</h1>
+                
+                <!-- Nombres de los equipos -->
+                <div class="w3-row w3-margin-bottom">
+                    <div class="w3-half w3-large">NOM_V</div>
+                    <div class="w3-half w3-large">NOM_L</div>
                 </div>
-                <div style="  display:flex; justify-content: center;">
-                    <!-- <p style="text-align: center; margin-right: 5rem;">Grup_V</p> -->
-                    <P>VS</P>
-                    <!-- <p style="text-align: center;">Grup_L</p> -->
+                
+                <!-- "VS" central -->
+                <div class="w3-row w3-margin-bottom">
+                    <div class="w3-col w3-center w3-xlarge">VS</div>
                 </div>
-                <div style="  display:flex; justify-content: center;">
-                    <p style="text-align: center; margin-right: 12rem;">Gols_V</p>
-                    <p style="text-align: center;">Gols_L</p>
+                
+                <!-- Resultados de los equipos -->
+                <div class="w3-row w3-margin-bottom">
+                    <div class="w3-half w3-large">Gols_V</div>
+                    <div class="w3-half w3-large">Gols_L</div>
                 </div>
+                
+                <!-- Footer -->
+                <footer class="w3-black w3-padding-small w3-border-top w3-border-light-gray">
+                    Footer
+                </footer>
             </div>
-
-            <footer class="w3-container w3-black">
-                <h5>Footer</h5>
-            </footer>
+            
 
         </div>
 
         <div class="w3-card-4" style="width: 40%; margin-right: 1rem;">
 
-            <header class="w3-container w3-black">
-                <h1>Resultat</h1>
-            </header>
-
-            <div class="w3-container" style="background-color: white;">
-                <div style="  display:flex; justify-content: center;">
-                    <p style="text-align: center; margin-right: 12rem;">NOM_V</p>
-                    <p style="text-align: center;">NOM_L</p>
+            <div class="w3-container w3-white w3-center w3-padding-32" style="max-width: 600px; margin: auto; border-radius: 8px; border: 3px solid black;">
+                <h1 class="w3-xlarge w3-margin-bottom">Resultat</h1>
+                
+                <!-- Nombres de los equipos -->
+                <div class="w3-row w3-margin-bottom">
+                    <div class="w3-half w3-large">NOM_V</div>
+                    <div class="w3-half w3-large">NOM_L</div>
                 </div>
-                <div style="  display:flex; justify-content: center;">
-                    <p style="text-align: center; margin-right: 12rem;">Grup_V</p>
-                    <p style="text-align: center;">Grup_L</p>
+                
+                <!-- "VS" central -->
+                <div class="w3-row w3-margin-bottom">
+                    <div class="w3-col w3-center w3-xlarge">VS</div>
                 </div>
-                <div style="  display:flex; justify-content: center;">
-                    <p style="text-align: center; margin-right: 12rem;">Gols_V</p>
-                    <p style="text-align: center;">Gols_L</p>
+                
+                <!-- Resultados de los equipos -->
+                <div class="w3-row w3-margin-bottom">
+                    <div class="w3-half w3-large">Gols_V</div>
+                    <div class="w3-half w3-large">Gols_L</div>
                 </div>
+                
+                <!-- Footer -->
+                <footer class="w3-black w3-padding-small w3-border-top w3-border-light-gray">
+                    Footer
+                </footer>
             </div>
-
-            <footer class="w3-container w3-black">
-                <h5>Footer</h5>
-            </footer>
+            
 
         </div>
 
         <div class="w3-card-4" style="width: 40%; margin-right: 1rem;">
 
-            <header class="w3-container w3-black">
-                <h1>Resultat</h1>
-            </header>
-
-            <div class="w3-container" style="background-color: white;">
-                <div style="  display:flex; justify-content: center;">
-                    <p style="text-align: center; margin-right: 12rem;">NOM_V</p>
-                    <p style="text-align: center;">NOM_L</p>
+            <div class="w3-container w3-black w3-center w3-padding-32" style="max-width: 600px; margin: auto; border-radius: 8px;">
+                <h1 class="w3-xlarge w3-margin-bottom">Resultat</h1>
+                
+                <!-- Nombres de los equipos -->
+                <div class="w3-row w3-margin-bottom">
+                    <div class="w3-half w3-large">NOM_V</div>
+                    <div class="w3-half w3-large">NOM_L</div>
                 </div>
-                <div style="  display:flex; justify-content: center;">
-                    <p style="text-align: center; margin-right: 12rem;">Grup_V</p>
-                    <p style="text-align: center;">Grup_L</p>
+                
+                <!-- "VS" central -->
+                <div class="w3-row w3-margin-bottom">
+                    <div class="w3-col w3-center w3-xlarge">VS</div>
                 </div>
-                <div style="  display:flex; justify-content: center;">
-                    <p style="text-align: center; margin-right: 12rem;">Gols_V</p>
-                    <p style="text-align: center;">Gols_L</p>
+                
+                <!-- Resultados de los equipos -->
+                <div class="w3-row w3-margin-bottom">
+                    <div class="w3-half w3-large">Gols_V</div>
+                    <div class="w3-half w3-large">Gols_L</div>
                 </div>
+                
+                <!-- Footer -->
+                <footer class="w3-black w3-padding-small w3-border-top w3-border-light-gray">
+                    Footer
+                </footer>
             </div>
-
-            <footer class="w3-container w3-black">
-                <h5>Footer</h5>
-            </footer>
+            
 
         </div>
     </div>
 
     <div class="w3-container">
-        <table style="border: 2px solid black; margin-top: 3rem; margin-left: 12rem; margin-bottom: 10rem;">
-            <h2 style="text-align: center; margin-top: 3rem; font-weight: bold;">TAULA CLASSIFICACIO</h2>
+        <table>
             <tr>
-                <th>Posicio</th>
+                <th>Posició</th>
                 <th>Equip</th>
                 <th>Punts</th>
                 <th>Partits Jugats</th>
@@ -161,7 +198,7 @@
                 <th>Partits Perduts</th>
                 <th>Gols a Favor</th>
                 <th>Gols en Contra</th>
-                <th>Diferencia de Gols</th>
+                <th>Diferència de Gols</th>
             </tr>
             <tr>
                 <td>1</td>
@@ -170,44 +207,81 @@
                 <td>7</td>
                 <td>6</td>
                 <td>1</td>
-                <td>1</td>
-                <td>8</td>
+                <td>0</td>
+                <td>18</td>
                 <td>3</td>
-                <td>5</td>
+                <td>15</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>fwedwd</td>
-                <td>30</td>
+                <td>Lleida</td>
+                <td>28</td>
                 <td>7</td>
-                <td>6</td>
-                <td>1</td>
-                <td>1</td>
-                <td>8</td>
-                <td>3</td>
                 <td>5</td>
+                <td>2</td>
+                <td>0</td>
+                <td>14</td>
+                <td>5</td>
+                <td>9</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>dwdwed</td>
+                <td>Balaguer</td>
+                <td>26</td>
+                <td>7</td>
+                <td>4</td>
+                <td>3</td>
+                <td>0</td>
+                <td>12</td>
+                <td>6</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alpicat</td>
                 <td>30</td>
                 <td>7</td>
                 <td>6</td>
                 <td>1</td>
-                <td>1</td>
-                <td>8</td>
+                <td>0</td>
+                <td>18</td>
                 <td>3</td>
-                <td>5</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alpicat</td>
+                <td>30</td>
+                <td>7</td>
+                <td>6</td>
+                <td>1</td>
+                <td>0</td>
+                <td>18</td>
+                <td>3</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alpicat</td>
+                <td>30</td>
+                <td>7</td>
+                <td>6</td>
+                <td>1</td>
+                <td>0</td>
+                <td>18</td>
+                <td>3</td>
+                <td>15</td>
             </tr>
         </table>
+    
     </div>
 
     <footer>
         <div>
             <h3>Xarxes socials</h3>
-            <img src="../fotos/x.jpg" alt="">
-            <img src="../fotos/facebook.png" alt="">
-            <img src="../fotos/instagram.png" alt="">
+            <img src="../img/x.jpg" alt="">
+            <img src="../img/facebook.png" alt="">
+            <img src="../img/instagram.png" alt="">
         </div>
         <div>
             <a href="#">Inici</a>
