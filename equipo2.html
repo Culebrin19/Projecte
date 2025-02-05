@@ -67,19 +67,28 @@
             height: 50px;
             vertical-align: middle;
         }
+        .w3-bar .w3-button {padding: 16px;}
+        .w3-dropdown-click:hover .w3-dropdown-content {display: block;}
+        .w3-bar-item {flex-grow:1;}
     </style>
 </head>
 
 <body>
+
     <header>
         <div class="w3-bar w3-border" style="background-color: white;">
-            <a href="index.html" class="w3-bar-item w3-button w3-padding-16">Inici</a>
-            <a href="pages/Contacte.html" class="w3-bar-item w3-button w3-padding-16">Contacte</a>
-            <a href="pages/sobreNosaltres.html" class="w3-bar-item w3-button w3-padding-16">Sobre Nosaltres</a>
-            <a href="pages/Programes.html" class="w3-bar-item w3-button w3-padding-16">Programes</a>
-            <a href="pages/Noticies.html" class="w3-bar-item w3-button w3-padding-16">Noticies</a>
-            <a href="pages/Galeria.html" class="w3-bar-item w3-button w3-padding-16">Galeria</a>
-            <a href="pages/Classificacio.html" class="w3-bar-item w3-button w3-padding-16">Classificacio</a>
+            <a href="equipo2.html" class="w3-bar-item w3-button w3-padding-16">Inici</a>
+            <div class="w3-dropdown-click">
+                <button class="w3-button w3-padding-16" onclick="toggleMenu()">☰</button>
+                <div id="navMenu" class="w3-dropdown-content w3-bar-block w3-white w3-card-4" style="display:none;">
+                    <a href="pages/Contacte.html" class="w3-bar-item w3-button">Contacte</a>
+                    <a href="pages/sobreNosaltres.html" class="w3-bar-item w3-button">Sobre Nosaltres</a>
+                    <a href="pages/Programes.html" class="w3-bar-item w3-button">Programes</a>
+                    <a href="pages/Noticies.html" class="w3-bar-item w3-button">Noticies</a>
+                    <a href="pages/Galeria.html" class="w3-bar-item w3-button">Galeria</a>
+                    <a href="pages/Classificacio.html" class="w3-bar-item w3-button">Classificacio</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -168,5 +177,14 @@
             </div>
     </footer>
 </body>
-
+<script>
+    function toggleMenu() {
+        var x = document.getElementById("navMenu");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 </html>
