@@ -77,6 +77,22 @@
             height: 30%;
         }
 
+        tr:nth-child(even) {            
+            background-color: grey;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #a19d9d;
+            /* opacity: 0.9; */
+            color: white;
+        }
+
+        #normal tr:nth-child(odd) {
+            background-color: #a19d9d;
+            /* opacity: 0.9; */
+            color: white;
+        }
+
 </style>
 
 <body>
@@ -91,7 +107,7 @@
     </div>
 
     <div class="w3-container" style="  display:flex; justify-content: center; margin-top: 2rem; font-weight: bold;">
-        <div class="w3-card-4" style="margin-right: 1rem;">
+        <div class="w3-card-4" style="margin-right: 1rem; border-radius: 8px;">
             <div class="w3-container w3-green w3-center w3-padding altura" style="margin: auto; border-radius: 8px; height: 30%;">
                 <h1 class="w3-xlarge w3-margin-bottom">Resultat</h1>
                 
@@ -117,9 +133,8 @@
 
         </div>
 
-        <div class="w3-card-4" style="margin-right: 1rem;">
-
-            <div class="w3-container w3-red w3-center w3-padding altura" style="margin: auto; border-radius: 8px; height: 30%;">
+        <div class="w3-card-4" style="margin-right: 1rem; border-radius: 8px;">
+            <div class="w3-container w3-red w3-center w3-padding altura" style="margin: auto; border-radius: 8px; height: 30%; border-radius: 8px;">
                 <h1 class="w3-xlarge w3-margin-bottom">Resultat</h1>
                 
                 <div class="w3-row">
@@ -144,8 +159,7 @@
 
         </div>
 
-        <div class="w3-card-4" style="margin-right: 1rem;">
-
+        <div class="w3-card-4" style="margin-right: 1rem; border-radius: 8px;">
             <div class="w3-container w3-yellow w3-center w3-padding" style="margin: auto; border-radius: 8px;">
                 <h1 class="w3-xlarge w3-margin-bottom">Resultat</h1>
                 
@@ -172,7 +186,7 @@
 
     <div class="w3-container w3-padding-16">
         <table>
-            <tr>
+            <tr id="normal">
                 <th>Posició</th>
                 <th>Equip</th>
                 <th>Punts</th>
