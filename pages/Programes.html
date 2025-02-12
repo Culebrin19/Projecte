@@ -7,91 +7,217 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Sobre Nosaltres Staff</title>
 </head>
+<style>
+    header a:hover {
+        color: #d32f2f;
+    }
+
+    footer {
+        background-color: #000;
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    footer div {
+        margin-bottom: 1rem;
+    }
+
+    footer a {
+        color: #ccc;
+        text-decoration: none;
+        margin: 0 0.5rem;
+        transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #d32f2f;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer h3 {
+        margin: 0 0 10px;
+        font-size: 24px;
+        margin-top: 1rem;
+    }
+
+    .footer img {
+        margin: 0 15px;
+        height: 50px;
+        vertical-align: middle;
+    }
+
+    .w3-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .w3-cell-row {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .w3-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Programes h3 {
+        padding-left: 1rem;
+        background-color: rgb(165, 0, 0);
+        color: white;
+        width: 20%;
+        margin-left: 3%;
+        border-radius: 8px;
+    }
+
+    #Horario .horario {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #f1f1f1;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+</style>
 
 <body>
     <header>
-        <div class="w3-bar w3-border w3-green w3-large">
-            <a href="Home.html" class="w3-bar-item w3-button w3-padding-16">Inici</a>
-            <a href="Contacte.html" class="w3-bar-item w3-button w3-padding-16">Contacte</a>
-            <a href="sobreNosaltres.html" class="w3-bar-item w3-button w3-padding-16">Sobre Nosaltres</a>
-            <a href="Programes.html" class="w3-bar-item w3-button w3-padding-16">Programes</a>
-            <a href="Noticies.html" class="w3-bar-item w3-button w3-padding-16">Noticies</a>
-            <a href="Galeria.html" class="w3-bar-item w3-button w3-padding-16">Galeria</a>
-            <a href="Classificacio.html" class="w3-bar-item w3-button w3-padding-16">Classificacio</a>
+        <div class="w3-bar w3-border" style="background-color: white;">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">Inici</a>
+            <a href="pages/Contacte.html" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">Contacte</a>
+            <a href="pages/sobreNosaltres.html" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">Sobre Nosaltres</a>
+            <a href="pages/Programes.html" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">Programes</a>
+            <a href="pages/Noticies.html" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">Noticies</a>
+            <a href="pages/Galeria.html" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">Galeria</a>
+            <a href="pages/Classificacio.html" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">Classificacio</a>
         </div>
     </header>
 
-    <h3>Categoria</h3>
-    <div class="w3-cell-row w3-padding-16" style="height: 20rem;">
-        <div class="w3-container w3-red w3-cell">
-            <img src="../img/img2.jpeg" alt="" >
-        </div>
-        <div class="w3-container w3-green w3-cell">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam temporibus placeat doloribus
-                eveniet cumque illum officia recusandae quas ut fuga esse nobis, optio reprehenderit possimus.
-                Debitis exercitationem pariatur veniam dolore.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit at quas mollitia? Sit
-                distinctio maxime nesciunt rem. Id vero ipsam ipsa delectus architecto similique laborum, labore
-                quas incidunt ipsum?
-            </p>
-        </div>
-    </div>
-</div>
 
-<h3>Categoria</h3>
-
-    <div class="w3-cell-row w3-padding-16" style="height: 20rem;">
-        <div class="w3-container w3-red w3-cell">
-            <img src="../img/img2.jpeg" alt="" >
-        </div>
-        <div class="w3-container w3-green w3-cell">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam temporibus placeat doloribus
-                eveniet cumque illum officia recusandae quas ut fuga esse nobis, optio reprehenderit possimus.
-                Debitis exercitationem pariatur veniam dolore.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit at quas mollitia? Sit
-                distinctio maxime nesciunt rem. Id vero ipsam ipsa delectus architecto similique laborum, labore
-                quas incidunt ipsum?
-            </p>
-        </div>
-    </div>
-</div>
-
-<h3>Categoria</h3>
-
-<div class="w3-cell-row w3-padding-16" style="height: 20rem;">
-    <div class="w3-container w3-red w3-cell">
-        <img src="../img/img2.jpeg" alt="" >
-    </div>
-    <div class="w3-container w3-green w3-cell">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam temporibus placeat doloribus
-            eveniet cumque illum officia recusandae quas ut fuga esse nobis, optio reprehenderit possimus.
-            Debitis exercitationem pariatur veniam dolore.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit at quas mollitia? Sit
-            distinctio maxime nesciunt rem. Id vero ipsam ipsa delectus architecto similique laborum, labore
-            quas incidunt ipsum?
-        </p>
-    </div>
-</div>
-</div>
-
-<footer>
-    <div class="w3-container" style="margin-top: 2rem;">
-        <div class="w3-cell-row">
-            <div class="w3-container w3-red w3-cell">
-                <h3>Xarxes socials</h3>
+    <section id="Programes">
+        <h3 id="Programes" class="w3-center">Categoria : Juvenil A</h3>
+        <div class="w3-cell-row w3-padding-16" style="height: 20rem;">
+            <div id="IMG" class="w3-container w3-cell">
+                <img src="../img/equipo.jpg" alt="Equipo Juvenil A">
             </div>
-            <div class="w3-container w3-green w3-cell">
-                <p>Inici</p>
-                <p>Contacte</p>
-                <p>Sobre Nosaltres</p>
-                <p>Programes</p>
-                <p>Noticies</p>
-                <p>Galeria</p>
-                <p>Classificacio</p>
+            <div class="w3-container w3-light-grey w3-cell"
+                style="width: 75%; display: flex; flex-direction: column; justify-content: space-between; padding: 16px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis tempora iure quia magni explicabo
+                    iste distinctio nesciunt ad dicta illo expedita cupiditate perspiciatis, saepe doloribus quae nisi
+                    est optio fugiat nulla ullam rem. Veniam laudantium nobis, in excepturi quas ex reiciendis
+                    cupiditate illo, ut ullam voluptate esse libero enim obcaecati?</p>
+                <div id="Horario" class="horario">
+                    <p>Lunes, miercoles, viernes</p>
+                    <p>Horario: 9:00 am - 15:00 pm</p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+
+        <h3 id="Categoria">Categoria : Juvenil B</h3>
+        <div class="w3-cell-row w3-padding-16" style="height: 20rem;">
+            <div class="w3-container w3-cell">
+                <img src="../img/equipo.jpg" alt="Equipo Juvenil A">
+            </div>
+            <div class="w3-container w3-light-grey w3-cell"
+                style="width: 75%; display: flex; flex-direction: column; justify-content: space-between; padding: 16px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis tempora iure quia magni explicabo
+                    iste distinctio nesciunt ad dicta illo expedita cupiditate perspiciatis, saepe doloribus quae nisi
+                    est optio fugiat nulla ullam rem. Veniam laudantium nobis, in excepturi quas ex reiciendis
+                    cupiditate illo, ut ullam voluptate esse libero enim obcaecati?</p>
+                <div id="Horario" class="horario">
+                    <p>Lunes, miercoles, viernes</p>
+                    <p>Horario: 9:00 am - 15:00 pm</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="Categoria">Categoria : Cadete A</h3>
+        <div class="w3-cell-row w3-padding-16" style="height: 20rem;">
+            <div class="w3-container w3-cell">
+                <img src="../img/equipo.jpg" alt="Equipo Juvenil A">
+            </div>
+            <div class="w3-container w3-light-grey w3-cell"
+                style="width: 75%; display: flex; flex-direction: column; justify-content: space-between; padding: 16px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis tempora iure quia magni explicabo
+                    iste distinctio nesciunt ad dicta illo expedita cupiditate perspiciatis, saepe doloribus quae nisi
+                    est optio fugiat nulla ullam rem. Veniam laudantium nobis, in excepturi quas ex reiciendis
+                    cupiditate illo, ut ullam voluptate esse libero enim obcaecati?</p>
+                <div id="Horario" class="horario">
+                    <p>Lunes, miercoles, viernes</p>
+                    <p>Horario: 9:00 am - 15:00 pm</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="Categoria">Categoria : Cadete B</h3>
+        <div class="w3-cell-row w3-padding-16" style="height: 20rem;">
+            <div class="w3-container w3-cell">
+                <img src="../img/equipo.jpg" alt="Equipo Juvenil A">
+            </div>
+            <div class="w3-container w3-light-grey w3-cell"
+                style="width: 75%; display: flex; flex-direction: column; justify-content: space-between; padding: 16px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis tempora iure quia magni explicabo
+                    iste distinctio nesciunt ad dicta illo expedita cupiditate perspiciatis, saepe doloribus quae nisi
+                    est optio fugiat nulla ullam rem. Veniam laudantium nobis, in excepturi quas ex reiciendis
+                    cupiditate illo, ut ullam voluptate esse libero enim obcaecati?</p>
+                <div id="Horario" class="horario">
+                    <p>Lunes, miercoles, viernes</p>
+                    <p>Horario: 9:00 am - 15:00 pm</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="Categoria">Categoria : Cadete preferente</h3>
+        <div class="w3-cell-row w3-padding-16" style="height: 20rem;">
+            <div class="w3-container w3-cell">
+                <img src="../img/equipo.jpg" alt="Equipo Juvenil A">
+            </div>
+            <div class="w3-container w3-light-grey w3-cell"
+                style="width: 75%; display: flex; flex-direction: column; justify-content: space-between; padding: 16px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis tempora iure quia magni explicabo
+                    iste distinctio nesciunt ad dicta illo expedita cupiditate perspiciatis, saepe doloribus quae nisi
+                    est optio fugiat nulla ullam rem. Veniam laudantium nobis, in excepturi quas ex reiciendis
+                    cupiditate illo, ut ullam voluptate esse libero enim obcaecati?</p>
+                <div id="Horario" class="horario">
+                    <p>Lunes, miercoles, viernes</p>
+                    <p>Horario: 9:00 am - 15:00 pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <h3 class="footer">Patrocinadors</h3>
+            <img src="../img/joma.png" alt="Joma">
+            <img src="../img/albert_sole.png" alt="Albert Sole">
+            <img src="../img/nike.png" alt="Nike">
+            <img src="../img/sarabia.png" alt="Sarabia">
+
+            <div>
+                <h3 class="footer">Xarxes socials</h3>
+                <img src="../img/x.jpg" alt="Xarxa X">
+                <img src="../img/facebook.png" alt="Facebook">
+                <img src="../img/instagram.png" alt="Instagram">
+            </div>
+            <div>
+                <a href="#">Inici</a>
+                <a href="#">Contacte</a>
+                <a href="#">Sobre Nosaltres</a>
+                <a href="#">Programes</a>
+                <a href="#">Noticies</a>
+                <a href="#">Galeria</a>
+                <a href="#">Classificacio</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

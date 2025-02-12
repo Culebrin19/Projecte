@@ -1,120 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Document</title>
+    <title>Contacto</title>
+    <style>
+        div.absolute {
+            position: absolute;
+            top: 11rem;
+            right: 0;
+            left: 55%;
+            border: 3px solid #73AD21;
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
+        footer div {
+            margin-bottom: 1rem;
+        }
+
+        footer a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #d32f2f;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer h3 {
+            margin: 0 0 10px;
+            font-size: 24px;
+            margin-top: 1rem;
+        }
+
+        .footer img {
+            margin: 0 15px;
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        .content {
+            min-height: calc(100vh - 180px);
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
 </head>
-<style>
-  div.absolute {
-    position: absolute;
-    top: 11rem;
-    right: 0;
-    left: 55%;
-    border: 3px solid #73AD21;
-  }
 
-  footer {
-        background-color: #000;
-        color: white;
-        padding: 2rem 0;
-        text-align: center;
-        margin-top: 29rem;
-    }
-
-    footer div {
-        margin-bottom: 1rem;
-    }
-
-    footer a {
-        color: #ccc;
-        text-decoration: none;
-        margin: 0 0.5rem;
-        transition: color 0.3s ease;
-    }
-
-    footer a:hover {
-        color: #d32f2f;
-    }
-</style>
 <body>
-    
-  <div class="w3-bar w3-border" style="background-color: white; color: black;">
-    <a href="../index.html" class="w3-bar-item w3-button w3-padding-16">Inici</a>
-    <a href="Contacte.html" class="w3-bar-item w3-button w3-padding-16">Contacte</a>
-    <a href="sobreNosaltres.html" class="w3-bar-item w3-button w3-padding-16">Sobre Nosaltres</a>
-    <a href="Programes.html" class="w3-bar-item w3-button w3-padding-16">Programes</a>
-    <a href="Noticies.html" class="w3-bar-item w3-button w3-padding-16">Noticies</a>
-    <a href="Galeria.html" class="w3-bar-item w3-button w3-padding-16">Galeria</a>
-    <a href="Classificacio.html" class="w3-bar-item w3-button w3-padding-16">Classificacio</a>
-  </div>
 
-<div class="w3-row" style="height: 600px;">
-  <div class="w3-half w3-light-grey w3-padding">
-      <h2 class="w3-center">Contáctanos</h2>
-      <form class="w3-container w3-card w3-padding w3-white">
-          <div class="w3-section">
-              <label>Nombre</label>
-              <input class="w3-input w3-border" type="text" required>
-          </div>
-          <div class="w3-section">
-              <label>Correo Electrónico</label>
-              <input class="w3-input w3-border" type="email" required>
-          </div>
-          <div class="w3-section">
-              <label>Asunto</label>
-              <input class="w3-input w3-border" type="text" required>
-          </div>
-          <div class="w3-section">
-              <label>Motivo</label>
-              <select class="w3-select w3-border" required>
-                  <option value="" disabled selected>Seleccione una opción</option>
-                  <option value="informacion">Información</option>
-                  <option value="inscripcion">Inscripción</option>
-                  <option value="feedback">Feedback</option>
-                  <option value="otro">Otro</option>
-              </select>
-          </div>
-          <button type="submit" class="w3-btn w3-blue">Enviar</button>
-      </form>
-  </div>
+    <div class="w3-bar w3-border" style="background-color: white; color: black;">
+        <a href="../index.html" class="w3-bar-item w3-button w3-padding-16">Inici</a>
+        <a href="Contacte.html" class="w3-bar-item w3-button w3-padding-16">Contacte</a>
+        <a href="sobreNosaltres.html" class="w3-bar-item w3-button w3-padding-16">Sobre Nosaltres</a>
+        <a href="Programes.html" class="w3-bar-item w3-button w3-padding-16">Programes</a>
+        <a href="Noticies.html" class="w3-bar-item w3-button w3-padding-16">Noticies</a>
+        <a href="Galeria.html" class="w3-bar-item w3-button w3-padding-16">Galeria</a>
+        <a href="Classificacio.html" class="w3-bar-item w3-button w3-padding-16">Classificacio</a>
+    </div>
 
-  <div class="w3-half w3-padding">
-      <h2 class="w3-center">Nuestra Ubicación</h2>
-      <div class="w3-card w3-white w3-padding w3-margin-bottom">
-          <p><strong>Ubicación:</strong> 636 5th Ave, New York</p>
-          <p><strong>Teléfono:</strong> +1 123-456-7890</p>
-          <p><strong>Correo Electrónico:</strong> contacto@ejemplo.com</p>
-      </div>
-      <iframe 
-          class="w3-border" 
-          style="width: 900px; height: 680px;" 
-          src="https://maps.google.com/maps?q=636+5th+Ave%2C+New+York&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-          frameborder="0" 
-          scrolling="no">
-      </iframe>
-  </div>
-</div>
-  
+    <div class="w3-row content">
+        <div class="w3-half w3-padding">
+            <h2 class="w3-center">Contáctanos</h2>
+            <form class="w3-container w3-card w3-padding w3-white">
+                <div class="w3-section">
+                    <label>Nombre</label>
+                    <input class="w3-input w3-border" type="text" required>
+                </div>
+                <div class="w3-section">
+                    <label>Correo Electrónico</label>
+                    <input class="w3-input w3-border" type="email" required>
+                </div>
+                <div class="w3-section">
+                    <label>Asunto</label>
+                    <input class="w3-input w3-border" type="text" required>
+                </div>
+                <div class="w3-section">
+                    <label>Motivo</label>
+                    <textarea class="w3-input w3-border" rows="4" required placeholder="Escriba su motivo aquí..."></textarea>
+                </div>
+                <button type="submit" class="w3-btn w3-blue">Enviar</button>
+            </form>
+        </div>
 
+        <div class="w3-half w3-padding">
+            <h2 class="w3-center">Nuestra Ubicación</h2>
+            <div class="w3-card w3-white w3-padding w3-margin-bottom">
+                <p><strong>Ubicación:</strong> Camí del Graó, 25110, 25110 Alpicat, Lleida</p>
+                <p><strong>Teléfono:</strong> +34 123-456-7890</p>
+                <p><strong>Correo Electrónico:</strong> contacto@ejemplo.com</p>
+            </div>
+            <iframe class="w3-border" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.3751348475366!2d0.5487983877960009!3d41.66924105554224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a71eaf593a5081%3A0x85412f105933abd3!2sCamp%20Municipal%20de%20Alpicat%20-%20Club%20Atl%C3%A8tic%20d%E2%80%99Alpicat!5e0!3m2!1ses!2ses!4v1738866436843!5m2!1ses!2ses"
+                frameborder="0" scrolling="no">
+            </iframe>
+        </div>
+    </div>
 
-<footer>
-  <div>
-      <h3>Xarxes socials</h3>
-      <img src="../fotos/x.jpg" alt="">
-      <img src="../fotos/facebook.png" alt="">
-      <img src="../fotos/instagram.png" alt="">
-  </div>
-  <div>
-      <a href="#">Inici</a>
-      <a href="#">Contacte</a>
-      <a href="#">Sobre Nosaltres</a>
-      <a href="#">Programes</a>
-      <a href="#">Noticies</a>
-      <a href="#">Galeria</a>
-      <a href="#">Classificacio</a>
-  </div>
-</footer>
+    <footer>
+        <div class="footer">
+            <h3>Patrocinadors</h3>
+            <img src="../img/joma.png" alt="Joma">
+            <img src="../img/albert_sole.png" alt="Albert Sole">
+            <img src="../img/nike.png" alt="Nike">
+            <img src="../img/sarabia.png" alt="Sarabia">
+
+            <div>
+                <h3>Xarxes socials</h3>
+                <img src="../img/x.jpg" alt="Twitter">
+                <img src="../img/facebook.png" alt="Facebook">
+                <img src="../img/instagram.png" alt="Instagram">
+            </div>
+            <div>
+                <a href="#">Inici</a>
+                <a href="#">Contacte</a>
+                <a href="#">Sobre Nosaltres</a>
+                <a href="#">Programes</a>
+                <a href="#">Noticies</a>
+                <a href="#">Galeria</a>
+                <a href="#">Classificacio</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

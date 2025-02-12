@@ -36,19 +36,11 @@
     <header class="w3-container w3-black w3-center w3-padding-32 w3-large">
         <h1>FUTBOL CLUB ALPICAT</h1>
     </header>
-<br>
-<section class="w3-display-container w3-center">
-    <img src="img/campoAlpicat.jpg" alt="Campo de fútbol Alpicat" class="w3-image" style="max-width: 100%; border-radius: 10px;">
-</section>
-    <!-- <div class="w3-content w3-display-container ">
-      <img class="mySlides" src="img/campo.jpg" style="width:100%">
-      <img class="mySlides" src="img/campoAlpicat.jpg" style="width:100%">
-      <img class="mySlides" src="img/campo.jpg" style="width:100%">
-      <img class="mySlides" src="img/campoAlpicat.jpg" style="width:100%">
-    
-      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-    </div> -->
+    <section class="w3-display-container w3-center">
+        <div>
+            <img src="img/campoAlpicat.jpg" alt="Campo de fútbol Alpicat" class="w3-image w3-margin-top" style="width: 100%; height: 100%;">
+        </div>
+    </section>
 
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-third">
@@ -84,42 +76,14 @@
             </a>
         </div>
     </div>
-<br>
+    <br>
     <footer>
         <div>
             <img src="img/x.jpg" alt="">
             <img src="img/facebook.png" alt="">
             <img src="img/instagram.png" alt="">
         </div>
-        <div>
-            <a href="#">Inici</a>
-            <a href="#">Contacte</a>
-            <a href="#">Sobre Nosaltres</a>
-            <a href="#">Programes</a>
-            <a href="#">Noticies</a>
-            <a href="#">Galeria</a>
-            <a href="#">Classificacio</a>
-        </div>
     </footer>
 </body>
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      x[slideIndex-1].style.display = "block";  
-    }
-    </script>
 
 </html>
