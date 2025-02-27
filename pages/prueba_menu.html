@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con W3.CSS</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="w3-container w3-teal">
+        <h1>Mi Página Web</h1>
+    </div>
+    
+    <div class="w3-bar w3-light-grey">
+        <button class="w3-bar-item w3-button" onclick="openSection('inicio')">Inicio</button>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Menú</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" onclick="openSection('sub1')">Subapartado 1</button>
+                <button class="w3-bar-item w3-button" onclick="openSection('sub2')">Subapartado 2</button>
+                <button class="w3-bar-item w3-button" onclick="openSection('sub3')">Subapartado 3</button>
+                <a href="#p1">prueba</a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="inicio" class="w3-container section">
+        <h2>Inicio</h2>
+        <p>Bienvenido a mi página web.</p>
+    </div>
+    <div id="sub1" class="w3-container section" style="display:none">
+        <h2>Subapartado 1</h2>
+        <p>Contenido del primer subapartado.</p>
+    </div>
+    
+    <div id="sub2" class="w3-container section" style="display:none">
+        <h2>Subapartado 2</h2>
+        <p>Contenido del segundo subapartado.</p>
+    </div>
+    
+    <div id="sub3" class="w3-container section" style="display:none">
+        <h2>Subapartado 3</h2>
+        <p>Contenido del tercer subapartado.</p>
+    </div>
+    
+    <h2 id="p1">Prunea</h2>
+    <p>prueba de menu </p>
+    <script>
+        function openSection(sectionId) {
+            var sections = document.getElementsByClassName("section");
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            document.getElementById(sectionId).style.display = "block";
+        }
+    </script>
+</body>
+</html>
